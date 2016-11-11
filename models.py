@@ -15,7 +15,6 @@ class Estado(models.Model):
                                     null=True)
 
     class Meta(object):
-        db_table = 'estado'
         verbose_name_plural = 'Estados'
 
     def __str__(self):
@@ -35,7 +34,6 @@ class Municipio(models.Model):
                                     null=True)
 
     class Meta(object):
-        db_table = 'municipio'
         verbose_name_plural = 'Municipios'
 
     def __str__(self):
@@ -61,7 +59,6 @@ class Ubicacion(models.Model):
     iidestado = models.ForeignKey(Estado)
 
     class Meta(object):
-        db_table = 'ubicacion'
         verbose_name_plural = 'Ubicaciones'
 
     def __str__(self):
